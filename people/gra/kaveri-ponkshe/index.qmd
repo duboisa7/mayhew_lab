@@ -1,0 +1,34 @@
+---
+title: "Kaveri Ponkshe"
+subtitle: "M.S. Student"
+sortby: "2"
+image: "kaveri-ponkshe.png"
+about:
+  template: trestles
+  links:
+    - text: "{{< iconify academicons:orcid >}}"
+      href: www.google.com
+    - text: "{{< iconify academicons:google-scholar >}}"
+      href: www.google.com
+    - text: "{{< iconify fa:github >}}"
+      href: www.google.com
+---
+## Biography
+
+Duis ornare ex ac iaculis pretium. Maecenas sagittis odio id erat pharetra, sit amet consectetur quam sollicitudin. Vivamus pharetra quam purus, nec sagittis risus pretium at. Nullam feugiat, turpis ac accumsan interdum, sem tellus blandit neque, id vulputate diam quam semper nisl.
+
+## Education
+
+B.S. Chemistry, College of William & Mary, 2012
+
+Ph.D. Food Science, University of Illinois at Urbana-Champaign, 2017
+
+## Experience
+
+Senior Associate Scientist, SC Johnson & Son, Inc., 2017-2018
+
+Postdoctoral Fellow, Monell Chemical Senses Center, 2018-2021
+
+## Instructional Activities
+
+FSC 310: Sensory Analysis and Consumer Research

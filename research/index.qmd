@@ -1,21 +1,27 @@
 ---
 title: "Research"
 listing:
-  # - id: projects
-  #   contents: "projects/*.qmd"
-  #   fields: [title, subtitle]
-  #   image-placeholder: person-placeholder.png
-  #   image-height: 10em
-  - id: articles
+  - id: projects
+    contents: "/*/index.qmd"
+    type: grid
+    grid-columns: 3
+    grid-item-align: center
+    fields: [title, image]
+    image-placeholder: "research-placeholder.jpeg"
+    image-height: 10em
+  - id: other
     sort: "date desc"
-    categories: true
     contents: "articles/*.qmd"
     type: table
     fields: [title, date]
-    image-placeholder: person-placeholder.png
+    image-placeholder: "research-placeholder.jpeg"
     image-height: 10em
 ---
 
-## Journal Articles
-:::{#articles}
+### Current Projects
+:::{#projects}
+:::
+
+### Other Work
+:::{#other}
 :::

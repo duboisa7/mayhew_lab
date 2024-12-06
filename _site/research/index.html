@@ -75,7 +75,35 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-articles .list');
+    const listingTargetEl = window.document.querySelector('#listing-projects .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-projects'] = new List('listing-projects', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-other .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -88,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-articles'] = new List('listing-articles', options);
+    window['quarto-listings']['listing-other'] = new List('listing-other', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -168,10 +196,6 @@ window.Quarto = {
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../courses/index.html"> 
-<span class="menu-text">Courses</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../news/index.html"> 
 <span class="menu-text">News</span></a>
   </li>  
@@ -200,6 +224,9 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <div id="quarto-announcement" data-announcement-id="9616bfb5c47a60811ea96e08f2ae1bd0" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p><strong>Alert</strong> - this is some information that you should pay attention to</p>
+</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
@@ -210,10 +237,11 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#journal-articles" id="toc-journal-articles" class="nav-link active" data-scroll-target="#journal-articles">Journal Articles</a></li>
+  <li><a href="#current-projects" id="toc-current-projects" class="nav-link active" data-scroll-target="#current-projects">Current Projects</a></li>
+  <li><a href="#other-work" id="toc-other-work" class="nav-link" data-scroll-target="#other-work">Other Work</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="antioxidant">antioxidant <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cheminformatics">cheminformatics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="conjoint analysis">conjoint analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="consumer">consumer <span class="quarto-category-count">(1)</span></div><div class="category" data-category="consumer perception">consumer perception <span class="quarto-category-count">(1)</span></div><div class="category" data-category="fruit">fruit <span class="quarto-category-count">(1)</span></div><div class="category" data-category="neural networks">neural networks <span class="quarto-category-count">(1)</span></div><div class="category" data-category="odorants">odorants <span class="quarto-category-count">(1)</span></div><div class="category" data-category="olfactory perception">olfactory perception <span class="quarto-category-count">(1)</span></div><div class="category" data-category="orange juice beverage">orange juice beverage <span class="quarto-category-count">(1)</span></div><div class="category" data-category="packaging claim">packaging claim <span class="quarto-category-count">(1)</span></div><div class="category" data-category="packaging type">packaging type <span class="quarto-category-count">(1)</span></div><div class="category" data-category="price">price <span class="quarto-category-count">(1)</span></div><div class="category" data-category="product claim">product claim <span class="quarto-category-count">(1)</span></div><div class="category" data-category="sensory analysis">sensory analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="smell">smell <span class="quarto-category-count">(1)</span></div><div class="category" data-category="sustainability attitudes">sustainability attitudes <span class="quarto-category-count">(1)</span></div><div class="category" data-category="sustainable packaging">sustainable packaging <span class="quarto-category-count">(1)</span></div></div></div>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -236,13 +264,91 @@ window.Quarto = {
 </header>
 
 
-<section id="journal-articles" class="level2">
-<h2 class="anchored" data-anchor-id="journal-articles">Journal Articles</h2>
-<div id="listing-articles" class="quarto-listing quarto-listing-container-table">
+<section id="current-projects" class="level3">
+<h3 class="anchored" data-anchor-id="current-projects">Current Projects</h3>
+<div id="listing-projects" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1729274777354" data-listing-reading-time-sort="1" data-listing-word-count-sort="21">
+<a href="../research/banana/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img loading="lazy" src="../research/banana/img/feature-banana.jpeg" class="thumbnail-image card-img" style="height: 10em;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Banana Title
+</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1729277315299" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../research/berry/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img loading="lazy" src="../research/berry/img/feature-berry.jpeg" class="thumbnail-image card-img" style="height: 10em;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Berry Title
+</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1729275279627" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
+<a href="../research/pulse/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img loading="lazy" src="../research/pulse/img/feature-pulse.jpeg" class="thumbnail-image card-img" style="height: 10em;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Characterizing Bean Flavor
+</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1729282352064" data-listing-reading-time-sort="1" data-listing-word-count-sort="49">
+<a href="../research/honey/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img loading="lazy" src="../research/honey/img/feature-honey.jpg" class="thumbnail-image card-img" style="height: 10em;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Quantifiying Honey Sweetness
+</h5>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1729274492785" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="../research/sev/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top"><img src="research-placeholder.jpeg" style="height: 10em;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Sweet-Enhancing Volatiles
+</h5>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
+<section id="other-work" class="level3">
+<h3 class="anchored" data-anchor-id="other-work">Other Work</h3>
+<div id="listing-other" class="quarto-listing quarto-listing-container-table">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
      <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-articles-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-articles'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+     <select id="listing-other-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-other'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
        <option value="" disabled="" selected="" hidden="">Order By</option>
        <option value="index" data-direction="asc">Default</option>
          <option value="listing-date-sort" data-direction="asc">
@@ -273,7 +379,7 @@ window.Quarto = {
 </tr>
 </thead>
 <tbody class="list">
-<tr data-index="0" data-categories="conjoint analysis,consumer perception,sustainable packaging,sustainability attitudes,packaging type,packaging claim,product claim,price,orange juice beverage" data-listing-date-sort="1721458800000" data-listing-file-modified-sort="1727373269016" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="278" data-listing-title-sort="Unpacking Consumer Preferences: Perceptions and Sustainability of Packaging Material for Orange Juice" data-listing-filename-sort="2024_dlamini-mayhew-nolden.qmd">
+<tr data-index="0" data-listing-date-sort="1721458800000" data-listing-file-modified-sort="1729270494121" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="278" data-listing-title-sort="Unpacking Consumer Preferences: Perceptions and Sustainability of Packaging Material for Orange Juice" data-listing-filename-sort="2024_dlamini-mayhew-nolden.qmd">
 <td>
 <a href="../research/articles/2024_dlamini-mayhew-nolden.html" class="title listing-title">Unpacking Consumer Preferences: Perceptions and Sustainability of Packaging Material for Orange Juice</a>
 </td>
@@ -281,7 +387,7 @@ window.Quarto = {
 <span class="listing-date">Jul 20, 2024</span>
 </td>
 </tr>
-<tr data-index="1" data-categories="cheminformatics,neural networks,odorants,olfactory perception,smell" data-listing-date-sort="1693465200000" data-listing-file-modified-sort="1727380512834" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="216" data-listing-title-sort="A principal odor map unifies diverse tasks in olfactory perception" data-listing-filename-sort="2023_lee-mayhew-sanchezlengeling-wei-qian-little-andres-nguyen-moloy-yasonik-parker-gerkin-mainland-wiltschko.qmd">
+<tr data-index="1" data-listing-date-sort="1693465200000" data-listing-file-modified-sort="1729270505663" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="216" data-listing-title-sort="A principal odor map unifies diverse tasks in olfactory perception" data-listing-filename-sort="2023_lee-mayhew-sanchezlengeling-wei-qian-little-andres-nguyen-moloy-yasonik-parker-gerkin-mainland-wiltschko.qmd">
 <td>
 <a href="../research/articles/2023_lee-mayhew-sanchezlengeling-wei-qian-little-andres-nguyen-moloy-yasonik-parker-gerkin-mainland-wiltschko.html" class="title listing-title">A principal odor map unifies diverse tasks in olfactory perception</a>
 </td>
@@ -289,7 +395,7 @@ window.Quarto = {
 <span class="listing-date">Aug 31, 2023</span>
 </td>
 </tr>
-<tr data-index="2" data-categories="sensory analysis,antioxidant,consumer,fruit" data-listing-date-sort="1675411200000" data-listing-file-modified-sort="1727379183610" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="345" data-listing-title-sort="Market potential and value‐added opportunities of cold‐hardy berries and small fruits in the Intermountain West, USA" data-listing-filename-sort="2023_garg-leisso-kim-mayhew-song-jarrett-kuo.qmd">
+<tr data-index="2" data-listing-date-sort="1675411200000" data-listing-file-modified-sort="1729270517098" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="345" data-listing-title-sort="Market potential and value‐added opportunities of cold‐hardy berries and small fruits in the Intermountain West, USA" data-listing-filename-sort="2023_garg-leisso-kim-mayhew-song-jarrett-kuo.qmd">
 <td>
 <a href="../research/articles/2023_garg-leisso-kim-mayhew-song-jarrett-kuo.html" class="title listing-title">Market potential and value‐added opportunities of cold‐hardy berries and small fruits in the Intermountain West, USA</a>
 </td>

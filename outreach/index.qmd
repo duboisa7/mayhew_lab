@@ -1,0 +1,13 @@
+---
+title: "Extension and Outreach"
+---
+
+Things to include here:
+
+Details related to extension work
+Methods to contact for extension work
+... should extension stuff actually be in the 'services' page? should services page be changed to 'extension'?
+
+Outreach presentations..
+- should this be set up as listings page?
+- i.e. anytime there is an outreach pres, there is a new listing for it?... or maybe just some words about outreach and some pictures and then a link to a 'News' page to see most recent lab news that is tagged with the 'outreach' category tag.

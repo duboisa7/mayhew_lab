@@ -1,9 +1,6 @@
 ---
 title: "Welcome to the Mayhew Sensory Lab!"
 website:
-  announcement: 
-    content: "**New** - this is an announcement" 
-    position: below-navbar
   page-layout: full
 ---
 

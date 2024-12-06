@@ -1,0 +1,13 @@
+/*-- scss:defaults --*/
+$primary: #023743;
+$success: #72874E;
+$secondary: #A4BED5;
+$info: #453947;
+$warning: #FED789;
+$danger: #7D1A04;
+$link-color: $info;
+$link-hover-color: darken($link-color, 25%);
+$emphasized-link-hover-darken-percentage: 25%;
+$body-bg: #EAF2F9;
+
+/*-- scss:rules --*/

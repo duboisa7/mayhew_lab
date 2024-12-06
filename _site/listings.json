@@ -2,17 +2,22 @@
   {
     "listing": "/people/index.html",
     "items": [
-      "/people/staff/ejm.html",
-      "/people/staff/hrm.html",
-      "/people/gra/knp.html",
-      "/people/gra/mam.html",
-      "/people/ura/example.html",
-      "/people/alumni/example.html"
+      "/people/staff/emily-mayhew/index.html",
+      "/people/staff/hannah-mulheron/index.html",
+      "/people/gra/mariano-aldana/index.html",
+      "/people/gra/kaveri-ponkshe/index.html",
+      "/people/ura/ima-undergrad/index.html",
+      "/people/ura/iza-notherundergrad/index.html"
     ]
   },
   {
     "listing": "/research/index.html",
     "items": [
+      "/research/banana/index.html",
+      "/research/berry/index.html",
+      "/research/pulse/index.html",
+      "/research/honey/index.html",
+      "/research/sev/index.html",
       "/research/articles/2024_dlamini-mayhew-nolden.html",
       "/research/articles/2023_lee-mayhew-sanchezlengeling-wei-qian-little-andres-nguyen-moloy-yasonik-parker-gerkin-mainland-wiltschko.html",
       "/research/articles/2023_garg-leisso-kim-mayhew-song-jarrett-kuo.html"

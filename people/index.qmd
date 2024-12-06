@@ -1,31 +1,32 @@
 ---
-title: ""
+title: "People"
 listing:
   - id: staff
-    contents: "staff/*.qmd"
+    contents: "staff/*/index.qmd"
+    sort: sortby
     type: grid
+    grid-item-align: center
     fields: [image, title, subtitle]
     image-placeholder: person-placeholder.png
-    image-height: 10em
+    image-height: 15em
   - id: gra
-    contents: "gra/*.qmd"
+    contents: "gra/*/index.qmd"
+    sort: sortby
     type: grid
+    grid-item-align: center
     fields: [image, title, subtitle]
     image-placeholder: person-placeholder.png
-    image-height: 10em
+    image-height: 15em
   - id: ura
-    contents: "ura/*.qmd"
+    contents: "ura/*/index.qmd"
+    sort: sortby
     type: grid
+    grid-item-align: center
     fields: [image, title, subtitle]
     image-placeholder: person-placeholder.png
-    image-height: 10em
-  - id: alumni
-    contents: "alumni/*.qmd"
-    type: grid
-    fields: [image, title, subtitle]
-    image-placeholder: person-placeholder.png
-    image-height: 10em
+    image-height: 15em
 ---
+</br>
 
 ## Faculty & Staff
 ::: {#staff}
@@ -41,4 +42,12 @@ listing:
 
 ## Alumni
 :::{#alumni}
+
+**Patrick Star** - M.S. - February 2023
+
+**Sandy Cheeks** - M.S. - March 2022
+
+**Joe Bob** - Ph.D - July 2021
+
+**Jane Smith** - M.S. - May 2020
 :::

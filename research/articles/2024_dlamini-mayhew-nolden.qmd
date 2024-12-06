@@ -14,16 +14,16 @@ author:
     orcid:
     email:
 date: 2024-07-20
-categories:
-  - conjoint analysis
-  - consumer perception
-  - sustainable packaging
-  - sustainability attitudes
-  - packaging type
-  - packaging claim
-  - product claim
-  - price
-  - orange juice beverage
+# categories:
+#   - conjoint analysis
+#   - consumer perception
+#   - sustainable packaging
+#   - sustainability attitudes
+#   - packaging type
+#   - packaging claim
+#   - product claim
+#   - price
+#   - orange juice beverage
 ---
 
 {{< iconify simple-icons:open-access >}}[Open Access Paper](https://doi.org/10.3390/su16146202)

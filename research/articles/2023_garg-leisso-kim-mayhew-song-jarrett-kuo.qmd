@@ -30,11 +30,11 @@ author:
     orcid:
     email:
 date: 2023-02-03
-categories:
-  - sensory analysis
-  - antioxidant
-  - consumer
-  - fruit
+# categories:
+#   - sensory analysis
+#   - antioxidant
+#   - consumer
+#   - fruit
 ---
 
 [Paper (Not Open Access)](https://doi.org/10.1111/1750-3841.16426)

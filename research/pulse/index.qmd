@@ -1,0 +1,22 @@
+---
+title: "Characterizing Bean Flavor"
+image: "img/feature-pulse.jpeg"
+---
+
+![](img/feature-pulse.jpeg)
+
+</br></br>
+
+Insert description from above here... maybe include a good infographic summary here?
+
+## Articles
+
+Insert links to articles here
+
+## Presentations
+
+Insert presentation decks here
+
+## Posters
+
+Insert posters here

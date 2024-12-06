@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index</title>
+<title>People</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -156,34 +156,6 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-alumni .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-alumni'] = new List('listing-alumni', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
   </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
@@ -252,10 +224,6 @@ window.Quarto = {
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../courses/index.html"> 
-<span class="menu-text">Courses</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../news/index.html"> 
 <span class="menu-text">News</span></a>
   </li>  
@@ -284,6 +252,9 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <div id="quarto-announcement" data-announcement-id="9616bfb5c47a60811ea96e08f2ae1bd0" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p><strong>Alert</strong> - this is some information that you should pay attention to</p>
+</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
@@ -304,35 +275,56 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">People</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><br></p>
 <section id="faculty-staff" class="level2">
 <h2 class="anchored" data-anchor-id="faculty-staff">Faculty &amp; Staff</h2>
 <div id="listing-staff" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1727380920112" data-listing-reading-time-sort="1" data-listing-word-count-sort="81">
-<a href="../people/staff/ejm.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="person-placeholder.png" style="height: 10em;"  class="thumbnail-image card-img"/></p>
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1729278567689" data-listing-reading-time-sort="1" data-listing-word-count-sort="81">
+<a href="../people/staff/emily-mayhew/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img loading="lazy" src="../people/staff/emily-mayhew/emily-mayhew.png" class="thumbnail-image card-img" style="height: 15em;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Emily Mayhew
+Emily Mayhew, Ph.D
 </h5>
 <div class="card-subtitle listing-subtitle">
-Assistant Professor
+Principal Investigator
 </div>
 </div>
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1727384962866" data-listing-reading-time-sort="1" data-listing-word-count-sort="74">
-<a href="../people/staff/hrm.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="person-placeholder.png" style="height: 10em;"  class="thumbnail-image card-img"/></p>
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1729278583964" data-listing-reading-time-sort="1" data-listing-word-count-sort="73">
+<a href="../people/staff/hannah-mulheron/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img loading="lazy" src="../people/staff/hannah-mulheron/hannah-mulheron.png" class="thumbnail-image card-img" style="height: 15em;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Hannah Mulheron
+Hannah Mulheron, M.S.
 </h5>
 <div class="card-subtitle listing-subtitle">
 Lab Manager
@@ -351,31 +343,35 @@ No matching items
 <h2 class="anchored" data-anchor-id="graduate-research-assistants">Graduate Research Assistants</h2>
 <div id="listing-gra" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1727381278655" data-listing-reading-time-sort="1" data-listing-word-count-sort="81">
-<a href="../people/gra/knp.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="person-placeholder.png" style="height: 10em;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Kaveri Ponkshe
-</h5>
-<div class="card-subtitle listing-subtitle">
-M.S. Student
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1727380934476" data-listing-reading-time-sort="1" data-listing-word-count-sort="81">
-<a href="../people/gra/mam.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="person-placeholder.png" style="height: 10em;"  class="thumbnail-image card-img"/></p>
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1729272113240" data-listing-reading-time-sort="1" data-listing-word-count-sort="81">
+<a href="../people/gra/mariano-aldana/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img loading="lazy" src="../people/gra/mariano-aldana/mariano-aldana.png" class="thumbnail-image card-img" style="height: 15em;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Mariano Aldana
 </h5>
 <div class="card-subtitle listing-subtitle">
 Ph.D Student
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1729272094847" data-listing-reading-time-sort="1" data-listing-word-count-sort="81">
+<a href="../people/gra/kaveri-ponkshe/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img loading="lazy" src="../people/gra/kaveri-ponkshe/kaveri-ponkshe.png" class="thumbnail-image card-img" style="height: 15em;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Kaveri Ponkshe
+</h5>
+<div class="card-subtitle listing-subtitle">
+M.S. Student
 </div>
 </div>
 </div>
@@ -391,14 +387,36 @@ No matching items
 <h2 class="anchored" data-anchor-id="undergraduate-research-assistants">Undergraduate Research Assistants</h2>
 <div id="listing-ura" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1727363375859" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="../people/ura/example.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="person-placeholder.png" style="height: 10em;"  class="thumbnail-image card-img"/></p>
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1729277760511" data-listing-reading-time-sort="1" data-listing-word-count-sort="73">
+<a href="../people/ura/ima-undergrad/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img loading="lazy" src="../people/ura/ima-undergrad/ima-undergrad.png" class="thumbnail-image card-img" style="height: 15em;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Example
+Ima Undergrad
 </h5>
+<div class="card-subtitle listing-subtitle">
+B.S. Nutritional Sciences Student
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1729277741433" data-listing-reading-time-sort="1" data-listing-word-count-sort="73">
+<a href="../people/ura/iza-notherundergrad/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-center">
+<p class="card-img-top">
+<img loading="lazy" src="../people/ura/iza-notherundergrad/iza-notherundergrad.png" class="thumbnail-image card-img" style="height: 15em;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Iza Notherundergrad
+</h5>
+<div class="card-subtitle listing-subtitle">
+B.S. Food Science Student
+</div>
 </div>
 </div>
 </a>
@@ -411,24 +429,11 @@ No matching items
 </section>
 <section id="alumni" class="level2">
 <h2 class="anchored" data-anchor-id="alumni">Alumni</h2>
-<div id="listing-alumni" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1727363398343" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="../people/alumni/example.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="person-placeholder.png" style="height: 10em;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Example
-</h5>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
+<div id="alumni">
+<p><strong>Patrick Star</strong> - M.S. - February 2023</p>
+<p><strong>Sandy Cheeks</strong> - M.S. - March 2022</p>
+<p><strong>Joe Bob</strong> - Ph.D - July 2021</p>
+<p><strong>Jane Smith</strong> - M.S. - May 2020</p>
 </div>
 
 
